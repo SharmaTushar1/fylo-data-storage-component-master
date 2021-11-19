@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("Images/bg-desktop.png") no-repeat;
+    background-color: hsl(229, 57%, 11%);
+    background-size: 100vw 50vh;
+    background-position: bottom;
+    padding: 0 2rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "Raleway";
+    color: hsl(243, 100%, 93%);
+}
+
+.container{
+    display: flex;
+    margin: 0 4rem;
+    height: 100vh;
+    width: 70rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#left{
+    width: 21rem;
+    height: 12rem;
+    border-radius: 5px;
+    border-top-right-radius: 100px;
+    padding: 2rem;
+}
+
+
+
+.container-item {
+    background-color: hsl(228, 56%, 26%);
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom{
+    display: flex;
+}
+
+.bottom img{
+    /* padding: 0.5rem; */
+    /* border-radius: 5px; */
+    /* width: 80%; */
+}
+
+h5{
+    font-weight: 400;
+}
+
+h5 span{
+    font-weight: 800;
+}
+
+#file{
+    width: 100%;
+    position: relative;
+}
+
+#space-left, #space-right{
+    font-weight: 800;
+    font-size: smaller;
+}
+
+#space-left{
+    position: absolute;
+    top: 4.5rem;
+    left: 2rem;
+}
+
+#space-right{
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+}
+
+#bubble{
+    width: 10rem;
+    height: 4rem;
+    background-color: white;
+    position: absolute;
+    top: -3rem;
+    right: 2rem;
+    border-radius: 0.5rem;
+}
+
+#bubble h1{
+    font-size: 2.5rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    padding-right: 0.2rem;
+    color: black;
+}
+
+#bubble h6{
+    display: inline-block;
+    position: relative;
+    bottom: 0.7rem;
+    font-size: 0.7rem;
+    color: hsl(229, 7%, 55%);
+}
+
+.images-item{
+    background-color: hsl(229, 57%, 11%);
+    height: 3rem;
+    width: 3rem;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+}
+
+.top{
+    margin-bottom: 1.5rem;
+}
+
+.bottom{
+    width: 11rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#right{ 
+    width: 28rem;
+    height: 9rem;
+    border-radius: 5px;
+    margin-left: 1.5rem;
+    
+    padding: 2rem;
+    position: relative; /*To level the #left and right container items*/
+    
+    top: 1.5rem;
+}
+
+#point{
+    border: 5px solid white;
+    height: 0;
+    width: 0;
+    border-top: 2rem solid transparent;
+    border-bottom: 2rem solid transparent;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid white;
+    position: absolute;
+    top: -1.2rem;
+    right: 2rem;
+}
+
+.text{
+    margin-bottom: 0.5rem;
+}
+
+
+@media only screen and (max-width: 900px)  {
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* width: 80vw; */
+    }
+
+    #right{
+        width: 21rem;
+        position: relative;
+        left: -0.65rem;
+    }
+
+    #point{
+        display: none;
+    }
+
+    #bubble{
+        position: absolute;
+        top: 7rem;
+        right: 5rem;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        background-size: cover;
+    }
+
+    #left, #right{
+        width: 16rem;
+    }
+
+    #bubble{
+        position: absolute;
+        left: 3rem;
+    }
+
+    html{
+        height: 100%;
+    }
+    
+}
+
+
+
+
+/* 
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%) */

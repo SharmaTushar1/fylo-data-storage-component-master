@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="Images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-item" id="left">
+        <div class="images">
+          <div class="top">
+            <div><img src="Images/logo.svg" alt="" /></div>
+          </div>
+          <div class="bottom">
+            <div class="images-item">
+              <img src="Images/icon-document.svg" alt="" />
+            </div>
+            <div class="images-item">
+              <img src="Images/icon-folder.svg" alt="" />
+            </div>
+            <div class="images-item">
+              <img src="Images/icon-upload.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item" id="right">
+        <div id="bubble">
+          <h1>185</h1>
+          <h6>GB LEFT</h6>
+        </div>
+        <div id="point"></div>
+        <div class="container-item" id="space">
+          <div class="text"><h5>You've used <span>815 GB</span> of your storage</h5></div>
+          <progress id="file" value="815" max="1000"></progress>
+          <span id="space-left">0 GB</span>
+          <span id="space-right">1000 GB</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
