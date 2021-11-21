@@ -66,7 +66,36 @@ h5 span{
 
 #file{
     width: 100%;
+    height: 0.8rem;
+    /* position: relative; */
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#progress{
+    width: 81.5%;
+    height: 0.6rem;
+    border-radius: 10px;
+    background-image:linear-gradient(
+      to right, 
+      hsl(6, 100%, 80%), hsl(335, 100%, 65%)
+    );
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.1rem;
     position: relative;
+}
+
+#circle{
+    position: absolute;
+    right: 2px;
+    bottom: 0.1px;
+    height: 90%;
+    width: 8.5px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 #space-left, #space-right{
